@@ -1,0 +1,502 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepChatMarketer - Digital Marketing Redefined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="navbar shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="#25D366">
+                                <path
+                                    d="M12.004 2.003c-5.514 0-9.997 4.484-9.997 10.001 0 1.768.464 3.497 1.345 5.012l-1.426 5.217 5.352-1.404c1.477.805 3.153 1.229 4.726 1.229 5.514 0 9.996-4.484 9.996-10.001s-4.482-10.001-9.996-10.001zm0 18.001c-1.406 0-2.797-.367-4.012-1.062l-.287-.168-3.184.836.849-3.104-.187-.304c-.813-1.32-1.244-2.844-1.244-4.399 0-4.418 3.582-8.001 7.999-8.001s7.999 3.583 7.999 8.001-3.582 8.001-7.999 8.001zm4.406-6.845c-.242-.121-1.434-.707-1.655-.787-.221-.08-.382-.121-.543.121-.16.242-.621.787-.76.949-.139.16-.279.18-.521.06-.242-.121-1.021-.377-1.945-1.201-.719-.641-1.205-1.432-1.348-1.674-.139-.242-.015-.373.106-.494.109-.109.242-.281.363-.422.121-.141.16-.242.242-.404.08-.16.04-.303-.02-.424-.06-.121-.543-1.312-.747-1.793-.199-.48-.401-.414-.543-.422-.139-.007-.303-.007-.466-.007-.16 0-.422.06-.643.282-.221.221-.843.824-.843 2.008s.863 2.33.983 2.492c.121.16 1.701 2.598 4.127 3.543.577.199 1.025.318 1.375.406.577.146 1.104.125 1.521.076.463-.055 1.434-.586 1.637-1.152.201-.566.201-1.051.141-1.152-.06-.101-.221-.16-.463-.281z" />
+                            </svg>
+                            <h1 class="text-2xl font-bold text-indigo-600">DeepChatMarketer</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <button onclick="showSection('home')"
+                            class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-indigo-600 font-bold">Home</button>
+                        <button onclick="showSection('scanner')"
+                            class="nav-btn px-3 py-2 rounded-md text-sm font-medium">QR
+                            Scanner</button>
+                        <button onclick="showSection('builder')"
+                            class="nav-btn px-3 py-2 rounded-md text-sm font-medium">Bot
+                            Builder</button>
+                        <button onclick="showSection('dashboard')"
+                            class="nav-btn px-3 py-2 rounded-md text-sm font-medium">Dashboard</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="section fade-in">
+        <!-- Hero Section -->
+        <div class="gradient-bg pt-20 pb-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+                <div class="text-center">
+                    <h1 class="text-5xl font-bold text-white mb-6">
+                        <span id="typewriter"></span>
+                    </h1>
+                    <p class="text-xl text-white mb-8 max-w-3xl mx-auto">
+                        Create powerful WhatsApp chatbots without coding. Just scan, connect, and build intelligent
+                        conversations that convert.
+                    </p>
+                    <button onclick="showSection('scanner')"
+                        class="mint-btn py-4 px-8 text-lg transition duration-300 transform hover:scale-105">
+                        Get Started - Scan QR Code
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose DeepChatMarketer?</h2>
+                    <p class="text-xl text-gray-600">Everything you need to create professional WhatsApp chatbots</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card-hover card-bg p-8 rounded-xl shadow-lg card-border">
+                        <div class="text-4xl mb-4">📱</div>
+                        <h3 class="text-xl font-bold mb-4">QR Code Integration</h3>
+                        <p class="text-gray-600">Simply scan a QR code to connect your WhatsApp number and start
+                            building your bot instantly.</p>
+                    </div>
+
+                    <div class="card-hover card-bg p-8 rounded-xl shadow-lg card-border">
+                        <div class="text-4xl mb-4">🤖</div>
+                        <h3 class="text-xl font-bold mb-4">No-Code Bot Builder</h3>
+                        <p class="text-gray-600">Create complex conversation flows with our intuitive drag-and-drop
+                            interface. No programming required.</p>
+                    </div>
+
+                    <div class="card-hover card-bg p-8 rounded-xl shadow-lg card-border">
+                        <div class="text-4xl mb-4">📁</div>
+                        <h3 class="text-xl font-bold mb-4">File Management</h3>
+                        <p class="text-gray-600">Upload and send files, images, documents, and media through your
+                            chatbot responses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Scanner Section -->
+    <div id="scanner" class="section pt-20 fade-in hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4"><span id="typewriter-scanner"></span></h2>
+                <p class="text-xl text-gray-600">Scan the QR code with your phone to link your WhatsApp number</p>
+            </div>
+
+            <div class="card-bg card-border rounded-xl shadow-lg p-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- QR Code Display -->
+                    <div class="text-center">
+                        <div class="qr-scanner w-64 h-64 mx-auto rounded-lg flex items-center justify-center mb-6">
+                            <div id="qr-code" class="text-6xl pulse-animation">
+                                <div class="bg-[#1b263b] p-4 rounded-lg">
+                                    <div class="grid grid-cols-8 gap-1">
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-white"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                        <div class="w-2 h-2 bg-black"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="generateQR()"
+                            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg">
+                            Generate New QR Code
+                        </button>
+                    </div>
+
+                    <!-- Instructions -->
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-gray-900">How to Connect:</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div
+                                    class="bg-indigo-100 text-indigo-600 rounded-full w-8 h-8 flex items-center justify-center font-bold">
+                                    1</div>
+                                <p class="text-gray-700">Open WhatsApp on your phone</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div
+                                    class="bg-indigo-100 text-indigo-600 rounded-full w-8 h-8 flex items-center justify-center font-bold">
+                                    2</div>
+                                <p class="text-gray-700">Go to Settings → Linked Devices</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div
+                                    class="bg-indigo-100 text-indigo-600 rounded-full w-8 h-8 flex items-center justify-center font-bold">
+                                    3</div>
+                                <p class="text-gray-700">Tap "Link a Device" and scan this QR code</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div
+                                    class="bg-indigo-100 text-indigo-600 rounded-full w-8 h-8 flex items-center justify-center font-bold">
+                                    4</div>
+                                <p class="text-gray-700">Your WhatsApp is now connected!</p>
+                            </div>
+                        </div>
+
+                        <!-- Connection Status -->
+                        <div id="connection-status"
+                            class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
+                            ✅ WhatsApp Connected Successfully!
+                            <button onclick="showSection('builder')"
+                                class="ml-4 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded text-sm">
+                                Start Building Bot
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bot Builder Section -->
+    <div id="builder" class="section pt-20 fade-in hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4"><span id="typewriter-builder"></span></h2>
+                <p class="text-xl text-gray-600">Create conversation flows and responses without any coding</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Bot Configuration Panel -->
+                <div class="lg:col-span-1">
+                    <div class="card-bg card-border rounded-xl shadow-lg p-6 sticky top-24">
+                        <h3 class="text-xl font-bold mb-6">Bot Settings</h3>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Bot Name</label>
+                                <input type="text" id="bot-name" placeholder="My WhatsApp Bot"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Welcome Message</label>
+                                <textarea id="welcome-message"
+                                    placeholder="Hi! Welcome to our service. How can I help you today?"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 h-20"></textarea>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Default Response</label>
+                                <textarea id="default-response"
+                                    placeholder="I didn't understand that. Please choose from the menu options."
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 h-16"></textarea>
+                            </div>
+
+                            <button onclick="saveBot()"
+                                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg">
+                                Save Bot Settings
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Flow Builder -->
+                <div class="lg:col-span-2">
+                    <div class="card-bg card-border rounded-xl shadow-lg p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-xl font-bold">Menu Flow Builder</h3>
+                            <button onclick="addMenuItem()"
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">
+                                + Add Menu Item
+                            </button>
+                        </div>
+
+                        <div id="menu-items" class="space-y-4">
+                            <!-- Menu items will be added here -->
+                            <div class="p-4 border border-gray-200 rounded-lg fade-in" id="menu-item-1">
+                                <div class="flex justify-between items-start mb-4">
+                                    <h4 class="text-lg font-medium">Menu Item 1</h4>
+                                    <button onclick="removeMenuItem(1)" class="text-red-600 hover:text-red-800">
+                                        ✕
+                                    </button>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Trigger
+                                            Keywords</label>
+                                        <input type="text" placeholder="e.g., pricing, help, support"
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                        <p class="text-xs text-gray-500 mt-1">Comma-separated keywords</p>
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Response
+                                            Type</label>
+                                        <select
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                            onchange="toggleResponseType(this, 1)">
+                                            <option value="text">Text Response</option>
+                                            <option value="file">File Response</option>
+                                            <option value="menu">Sub-menu</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div id="text-response-1">
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Response
+                                            Message</label>
+                                        <textarea placeholder="Enter your response message here..."
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 h-20"></textarea>
+                                    </div>
+
+                                    <div id="file-response-1" class="hidden">
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Select File to
+                                            Send</label>
+                                        <select
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                            <option value="">Choose a file...</option>
+                                        </select>
+                                    </div>
+
+                                    <div id="menu-response-1" class="hidden">
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Sub-menu
+                                            Options</label>
+                                        <textarea placeholder="1. Option One&#10;2. Option Two&#10;3. Option Three"
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 h-20"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- File Upload Section -->
+                        <div class="mt-8 p-6 card-bg card-border rounded-lg">
+                            <h4 class="text-lg font-bold mb-4">File Management</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Upload Files for Bot
+                                        Responses</label>
+                                    <input type="file" id="bot-files" multiple=""
+                                        accept="image/*,video/*,audio/*,.pdf,.doc,.docx"
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <p class="text-xs text-gray-500 mt-1">Images, videos, audio, PDFs, documents</p>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Allow User File
+                                        Uploads</label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" id="allow-uploads"
+                                            class="rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <span class="ml-2 text-sm text-gray-700">Enable file uploads from users</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="uploaded-files" class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-2">
+                                <!-- Uploaded files will appear here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard" class="section pt-20 fade-in hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4"><span id="typewriter-dashboard"></span></h2>
+                <p class="text-xl text-gray-600">Monitor your WhatsApp bot performance and conversations</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="card-bg card-border p-6 rounded-xl shadow-lg stats-card stats-card-animate"
+                    style="animation-delay:0s">
+                    <div class="flex items-center">
+                        <div class="text-3xl mr-4">💬</div>
+                        <div>
+                            <p class="text-sm text-gray-600">Total Messages</p>
+                            <p class="text-2xl font-bold text-gray-900">1,247</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bg card-border p-6 rounded-xl shadow-lg stats-card stats-card-animate"
+                    style="animation-delay:0.1s">
+                    <div class="flex items-center">
+                        <div class="text-3xl mr-4">👥</div>
+                        <div>
+                            <p class="text-sm text-gray-600">Active Users</p>
+                            <p class="text-2xl font-bold text-gray-900">89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bg card-border p-6 rounded-xl shadow-lg stats-card stats-card-animate"
+                    style="animation-delay:0.2s">
+                    <div class="flex items-center">
+                        <div class="text-3xl mr-4">📈</div>
+                        <div>
+                            <p class="text-sm text-gray-600">Response Rate</p>
+                            <p class="text-2xl font-bold text-gray-900">94%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bg card-border p-6 rounded-xl shadow-lg stats-card stats-card-animate"
+                    style="animation-delay:0.3s">
+                    <div class="flex items-center">
+                        <div class="text-3xl mr-4">⚡</div>
+                        <div>
+                            <p class="text-sm text-gray-600">Bot Status</p>
+                            <p class="text-lg font-bold text-green-600">Active</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Conversations -->
+            <div class="recent-conversations-bg card-border shadow-lg">
+                <h3 class="text-xl font-bold mb-6">Recent Conversations</h3>
+                <div>
+                    <div class="conversation-row">
+                        <div class="flex items-center space-x-3">
+                            <div class="conversation-initials">JD</div>
+                            <div>
+                                <p class="font-medium">John Doe</p>
+                                <p class="text-sm text-gray-600">Asked about pricing</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-sm text-gray-500">2 min ago</p>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Resolved</span>
+                        </div>
+                    </div>
+                    <div class="conversation-row">
+                        <div class="flex items-center space-x-3">
+                            <div class="conversation-initials"
+                                style="background:#2d254c;color:#b98cff;border-color:#b98cff;">SM</div>
+                            <div>
+                                <p class="font-medium">Sarah Miller</p>
+                                <p class="text-sm text-gray-600">Requested product catalog</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-sm text-gray-500">5 min ago</p>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Active</span>
+                        </div>
+                    </div>
+                    <div class="conversation-row ">
+                        <div class="flex items-center space-x-3">
+                            <div class="conversation-initials"
+                                style="background:#4c2d25;color:#ffb98c;border-color:#ffb98c;">MJ</div>
+                            <div>
+                                <p class="font-medium">Mike Johnson</p>
+                                <p class="text-sm text-gray-600">Support inquiry</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-sm text-gray-500">12 min ago</p>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+    <iframe height="1" width="1"
+        style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+    <style>
+        .type-cursor {
+            display: inline-block;
+            color: #6fffc2;
+            font-weight: bold;
+            font-size: 1em;
+            margin-left: 2px;
+        }
+
+        .blink {
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
